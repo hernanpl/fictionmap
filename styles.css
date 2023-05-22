@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+    
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;  
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .title {
+    font-weight: 600;  
+    }
+
+    a:active, a:focus {
+        outline: 0;
+        border: none;
+      }
+
+   .chip {
+        background-color: #808080; /* Grey background */
+        color: #fff; /* White text */
+        border-radius: 5px; /* Rounded corners */
+        padding: 5px 10px; /* Padding around text */
+      }
+  
+  #map {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .mapboxgl-marker {
+    width: 50px;
+    height: 50px;
+    border: none;
+  }
+
+  .mapboxgl-map {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+  }
+
+  .mapboxgl-popup-content {
+    background-color:#EDE8D9 !important;
+    border: 3px dotted #C55C56;  /* Add dotted red border */  
+    padding: 1rem;  
+    width: 300px;
+  }
+
+  .mapboxgl-popup-content a {
+   color: black;
+   font-size: larger; 
+  }
+  
+  h1 {
+    text-align: center;
+    position: fixed;
+    font-weight: bold !important;
+    font-size: 4rem !important;
+    color: #C55C56;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0; 
+    z-index: 1;
+    text-shadow: 0 0 3px #EDE8D9;
+  }
+
+  
+  .mapboxgl-popup-content img {
+    width: 120px;
+    margin-right: 10px;
+    float: left;
+  }
+
+
+
+  .mapboxgl-popup-tip {
+    border-top-color: #EDE8D9 !important;
+    border: 10px solid transparent !important; 
+}
+    
+  .mapboxgl-popup p {
+    font-size: 16px;
+  }
+  
+  .marker {
+    width: 40px;
+    height: 40px;
+  }
+
+  .marker {
+    width: 40px; /* Adjust the width as desired */
+    height: 40px; /* Adjust the height as desired */
+  }
+  .marker img {
+    width: 100%; /* Make the SVG icon fill the marker element */
+    height: 100%;
+  }
