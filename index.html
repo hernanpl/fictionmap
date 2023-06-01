@@ -13,7 +13,7 @@
     <h1>The Art Atlas</h1>
     <div id="map"></div>
     <script>
-      const mapboxgl = require('mapbox-gl');
+      const mapboxgl = window.mapboxgl;
       const MAPBOX_ACCESS_TOKEN = process.env.MAPBOX_ACCESS_TOKEN;
       const map = new mapboxgl.Map({
         container: 'map',
@@ -21,7 +21,6 @@
         center: [-88.75, 42.15],
         zoom: 1.5
       });
-    
         map.on('load', function() {
           // Hide state labels by setting their layer visibility to "none"
           map.setLayoutProperty('state-label', 'visibility', 'none');
