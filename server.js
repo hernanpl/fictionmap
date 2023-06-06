@@ -3,7 +3,6 @@ require('dotenv').config();
 const express = require('express');
 const jquery = require('jquery');
 const mapboxgl = require('mapbox-gl');
-
 const path = require('path');
 
 // Create Express app
@@ -21,7 +20,7 @@ app.get('/mapbox-access-token', (req, res) => {
 
 
 // Start the server
-const port = 3000; // Choose a suitable port number
+const port = process.env.PORT || 80;
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);
 });
