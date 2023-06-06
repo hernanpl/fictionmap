@@ -14,9 +14,10 @@
     font-weight: 600;  
     }
 
-    a:active, a:focus {
+  a {
         outline: 0;
         border: none;
+        color: #000000 !important;
       }
 
    .chip {
@@ -53,19 +54,33 @@
    font-size: larger; 
   }
   
+.title{
+  position: fixed;
+  z-index: 1;
+  align-items: center !important;
+  width: 100%;
+}
+
   h1 {
     text-align: center;
-    position: fixed;
     font-weight: bold !important;
     font-size: 4rem !important;
     color: #C55C56;
     top: 0;
-    width: 100%;
-    padding: 1rem 0; 
+    padding: 3rem 0 1rem 0; 
     z-index: 1;
     text-shadow: 0 0 3px #EDE8D9;
+    margin: 0 !important;
   }
 
+  .hero {
+    text-align: center;
+    font-size: 1rem;
+    top: 0;
+    z-index: 1;
+    margin: 0 !important;
+    text-shadow: 0 0 2px #EDE8D9;
+  }
   
   .mapboxgl-popup-content img {
     width: 120px;
@@ -73,27 +88,25 @@
     float: left;
   }
 
-
+  .mapboxgl-popup {
+  max-width: none !important;
+   margin: 0 !important; 
+   z-index: 2;
+  }
 
   .mapboxgl-popup-tip {
-    border-top-color: #EDE8D9 !important;
-    border: 10px solid transparent !important; 
+    display: none;
 }
     
   .mapboxgl-popup p {
     font-size: 16px;
   }
-  
-  .marker {
-    width: 40px;
-    height: 40px;
-  }
 
   .marker {
-    width: 40px; /* Adjust the width as desired */
-    height: 40px; /* Adjust the height as desired */
+    width: 40px;
+    height: 40px; 
   }
   .marker img {
-    width: 100%; /* Make the SVG icon fill the marker element */
+    width: 100%;
     height: 100%;
   }
